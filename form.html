@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="box">
+        <form action="obgd.html" method="post">
+            <fieldset>
+                <legend><b>Cadastro</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" required>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="estado"><strong>Estado</strong></label>
+                    <select id="estado" required>
+                      <option selected disabled value="">selecionar</option>
+                      <option>PR</option>
+                      <option>MT</option>
+                      <option>AM</option>
+                      <option>SE</option>
+                    </select>
+                </div>
+                <p>Formas de pagamento:</p>
+                <input type="radio" id="pagamento" name="pagamento" required>
+                <label for="boleto">Boleto</label>
+                <br>
+                <input type="radio" id="pagamento" name="pagamento" required>
+                <label for="cartao de credito">Cartão de Crédito</label>
+                <br>
+                <input type="radio" id="pagamento" name="pagamento" required>
+                <label for="cartao de debito">Cartão de Débito</label>
+                <br>
+                <input type="radio" id="pagamento" name="pagamento" required>
+                <label for="outro">Pix</label>
+                <br><br>
+                
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
